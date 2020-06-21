@@ -766,3 +766,525 @@
 //     document.write(i+",")
 // }
 
+
+
+// CHAPTER 21-25
+
+// 1
+// var first=prompt("enter first name");
+// var last=prompt("Enter last name");
+// alert("Welcome "+first+" "+last);
+
+// 2
+// var mob=prompt("Enter your favourite mobile model ");
+// document.write("My favourite phone is: "+mob+"<br>");
+// document.write("Length of string: "+ mob.length);
+
+
+// 3
+// var word="Pakistani";
+// document.write("String "+word+"<br>");
+// document.write("index of 'n': "+word.indexOf("n"))
+
+
+// 4
+// var word="Hello world";
+// document.write("String "+word+"<br>");
+// document.write("Last index of 'n': "+word.lastIndexOf("l"))
+
+// 5
+// var word="Pakistani";
+// document.write("String "+word+"<br>");
+// document.write("Character at index '3': "+word[3])
+
+
+// 6
+// var first=prompt("enter first name");
+// var last=prompt("Enter last name");
+// alert("Welcome "+first.concat(" "+last));
+
+
+// 7
+// var word="Hyderabad";
+// document.write("City: "+word+"<br>");
+// document.write("After replacement: "+word.replace("Hyder","Islam"))
+
+
+// 8
+// var message = "Ali and Sami are best friends. They play cricket and football together.";
+// var msgreplace = message.replace("and","&");
+// alert(msgreplace)
+
+
+// 8
+// var num="472";
+// var str=parseInt(num);
+// document.write("value: "+num+"<br>"+"Type: "+typeof(num)+"<br>");
+// document.write("value: "+str+"<br>"+"Type: "+typeof(str)+"<br>");
+
+
+// 10
+// var word=prompt("enter")
+// document.write("User input: "+word+"<br>");
+// document.write("Upper case: "+word.toUpperCase())
+
+// 11
+// var word=prompt("enter")
+// document.write("User input: "+word+"<br>");
+// document.write("Title case: "+(word[0].toUpperCase()+word.slice(1,).toLowerCase()))
+
+
+// 12
+// var num=35.36;
+// str=num.toString();
+// result=str.replace(".","");
+// document.write("Number: "+num+"<br>")
+// document.write("Result: "+result+"<br>")
+
+
+// 13
+// var word=prompt("Enter");
+// if(word.includes("@") || word.includes("!")  || word.includes(",")  || word.includes(".")  ){
+//     alert("Please enter a valid userame")
+// }
+
+// 14
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"]
+// var search=prompt("Welcome  to abc bakery.what do you want to order","Search in bakery")
+// search=search.toLowerCase();
+// if (A.includes(search)){
+//     document.write(search+" is available at index "+A.indexOf(search)+" in our bakery");
+// }
+// else{
+//     document.write(search+" is not available  in our bakery");
+
+// }
+
+
+// 15
+// var pass=prompt("enter password");
+
+// var letterNumber = /^[0-9a-zA-Z]+$/;
+
+//  if(pass.match(letterNumber)){
+  
+  
+// }
+// else{
+//     document.write("password should contain alphabets and numbers<br>")
+    
+// }
+
+
+// if (pass[0]==="0" || "1" || "2" || "3" || "4" || "5" || "6" || "7" || "8" || "9"){
+//         document.write("Password can not begin with a number<br>")
+        
+// }
+
+// if (pass.length<6){
+//         document.write("Password must be 6 characters long<br>")
+        
+// }
+
+
+
+// 16
+// var university = "University of Karachi";
+// var lst=university.split(" ");
+// for (var i=0;i<lst.length;i++){
+//     document.write("<br>")
+//     for(var j=0;j<lst[i].length;j++){
+//     document.write(lst[i][j]+"<br>")
+//     }
+// }
+
+
+// 17
+// var word=prompt("enter ");
+// document.write("user input: "+word+"<br>");
+// document.write("Last character of input: "+word[word.length-1])
+
+
+// 18
+
+// var word=0;
+// var sen="The quick brown fox jumps over the lazy dog";
+// var lst=sen.split(" ");
+
+// for(var i=0;i<lst.length;i++){
+//     if(lst[i]==="the" || lst[i]==="The" ){
+//         word +=1
+// }
+//     document.write(word)
+// }
+
+// document.write("Text: "+sen+"<br>")
+// document.write("There are "+word+"2 occurence(s) of word 'the'")
+
+
+// CHAPTER 26-30
+
+// 1
+// var int=+prompt("Enter integer");
+// document.write("number: "+int+"<br>");
+// document.write("Round of value: "+Math.round(int)+"<br>");
+// document.write("floor vlaue: "+Math.floor(int)+"<br>");
+// document.write("Ceil value: "+Math.ceil(int)+"<br>");
+
+
+// 2
+// var int=+prompt("Enter negative floating value");
+// document.write("number: "+int+"<br>");
+// document.write("Round of value: "+Math.round(int)+"<br>");
+// document.write("floor vlaue: "+Math.floor(int)+"<br>");
+// document.write("Ceil value: "+Math.ceil(int)+"<br>");
+
+
+// 3
+// var int=prompt("Enter value");
+// document.write("The absolute value of "+int+" is "+Math.abs(int))
+
+// 4
+// document.write("Random dice value: "+Math.round(Math.random()*6))
+
+// 5
+// var toss=Math.round(Math.random()*2);
+// if(toss===2){
+//     document.write(toss+"<br>"+"random coin value:Heads")
+// }
+// else if(toss===1){
+//     document.write(toss+"<br>"+"random coin value:Tails")
+// }
+
+// 6
+// var num=Math.round(Math.random()*100);
+// document.write("random number between 1 and 100 : "+num)
+
+
+// 7
+// var weight=prompt("enter Your weight in kilograms: ");
+// wght=parseFloat(weight)
+// document.write("The weight of the user is: "+wght+" Kilograms")
+
+
+// 8
+// var secretnum=Math.round(Math.random()*10);
+// var num=+prompt("Enter a number between 1 and 10")
+// if (num===secretnum){
+//     alert("Congratulations you have guess the number")
+    
+// }
+// else{
+//     alert("Try again")
+// }
+
+
+// CHAPTER 31-34
+
+// 1
+// document.write(new Date())
+
+
+// 2
+// var lst=["January","february","march","april","may","june","july","august","september","october","november","december"];
+// var month = new Date().getMonth()
+// document.write("Curent month: "+lst[month])
+
+// 3
+// var lst= ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// var day = new Date().getDay();
+// document.write("Today is : "+lst[day])
+
+// 4
+// var lst = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+// var day = new Date().getDay();
+// if (lst[day]===("Sun" || "Sat")){
+//     document.write("Its Fun day")
+// }
+
+
+// 5
+// var date=new Date().getDate();
+// if (date<=15){
+//     document.write("First fifteen days of the month")
+// }
+// else{
+//     document.write("Last days of the month")
+// }
+
+
+// 6
+// var date=new Date();
+// var secSince=date.getTime();
+// document.write("Current Date: "+date+"<br>");
+// document.write("Elapsed miliseconds since january 1,1970: "+secSince+"<br>");
+// document.write("Elapsed miliseconds since january 1,1970: "+secSince/60000);
+
+
+// 7
+// var hours=new Date().getHours();
+// if(hours<12){
+//     document.write("Its AM")
+// }
+// else{
+//     document.write("Its pM")
+// }
+
+
+// 8
+// var laterDate= new Date("Dec 31,2020");
+// document.write(laterDate)
+
+
+// 9
+// var time=new Date().getTime();
+// var ramdan=new Date("April 25,2020").getTime();
+// var days=Math.round((time-ramdan)/(1000*60*60*24));
+// document.write(days+" have passed since 1st ramdan 2020")
+
+
+// 10
+// var time=new Date("jan 05,2015").getTime();
+// var reftime=new Date("Dec 05,2015").getTime();
+// var sec=(reftime-time)/(1000*60);
+// document.write("On reference date "+new Date("Dec 05,2015")+",<br>"+sec+" seconds had passed since beginning of 2015")
+
+
+// 11
+// var date= new Date();
+// document.write("Current Date: "+date+"<br>")
+// var Hours=new Date().getHours()-1;
+// date.setHours(Hours);
+// document.write("Current Date: "+date+"<br>")
+
+
+// 12
+// var date= new Date();
+// document.write("Current Date: "+date+"<br>");
+// var years=new Date().getFullYear()-100;
+// date.setFullYear(years);
+// document.write("Current Date: "+date+"<br>");
+
+
+// 13
+// var age=prompt("Enter your age");
+// document.write("Your age is :"+age+"<br>");
+// var birth=new Date().getFullYear()-age
+// document.write("Your birth year is "+birth)
+
+// 14
+// var lst=["January","february","march","april","may","june","july","august","september","october","november","december"];
+// var Custname=prompt("Enter customer name")
+// var month=new Date().getMonth()
+// var units=prompt("Enter Nuber of units")
+// var chargesperunit=prompt("Enter charges per unit")
+// var late=prompt("Enter late payment surcharge")
+// var net=(units*chargesperunit)
+// document.write("Current Month: "+lst[month]+"<br>")
+// document.write("Number of units: "+units+"<br>")
+// document.write("Charges per unit: "+chargesperunit+"<br>")
+// document.write("Net Amount Payable (within Due Date): "+net+"<br>")
+// document.write(" Late Payment Surcharge: "+late+"<br>")
+// document.write("Gross Amount Payable (after Due Date): "+(net+late)+"<br>")
+
+
+
+
+// CHAPTER 35-38
+
+
+// 1
+// function date(){
+//     return new Date()
+// }
+// document.write(date())
+
+// 2
+// function name(){
+//     var first=prompt("Enter first name")
+//     var last=prompt("Enter last name")
+//     alert("Welcome "+(first+" "+last))
+// }
+// name()
+
+// 3
+// function add(){
+//     num1=+prompt("Enter first num")
+//     num2=+prompt("Enter second num")
+//     alert(num1+num2)
+// }
+// add()
+
+
+// 4
+// function calculator(num1,opr,num2){
+//     if (opr=="+"){
+//         alert(num1+num2)
+//     }
+//     else if (opr=="*"){
+//         alert(num1*num2)
+//     }
+//     else if (opr=="-"){
+//         alert(num1-num2)
+//     }
+//     else if (opr=="/"){
+//         alert(num1/num2)
+//     }
+//     else{
+//         alert("Enter correct operator")
+//     }
+// }
+// num1=+prompt("Enter 1st number")
+// num2=+prompt("Enter 2nd number")
+// opr=prompt("Enter operator")
+// calculator(num1,opr,num2)
+
+
+// 5
+// var num=+prompt("enter number")
+// function square(num){
+//     alert(num*num)
+// }
+// square(num)
+
+// 6
+// function fact(num){
+//     var fac=1
+//     for(var i=0;i<num;i++){
+//         fac*=(num-i)
+        
+//     }
+//     alert(fac)
+// }
+// num=+prompt("Enter number")
+// fact(num)
+
+// 7
+// function counting(start,end){
+//     for(start;start<=end;start++){
+//         document.write(start+"<br>")
+//     }
+// }
+
+// start=+prompt("Enter starting number");
+// end=+prompt("Enter ending number");
+// counting(start,end)
+
+// 8
+// function  calculateHypotenuse(){
+//     var base=+prompt("Enter base")
+//     var perp=+prompt("Enter perpendicular")
+//     function calculateSquare(){
+//             var hyp=(base*base)+(perp*perp)
+//             return(hyp)
+//     }
+//     alert(Math.sqrt(calculateSquare()))
+
+// }
+// calculateHypotenuse()
+
+// 9
+// function area(width,height){
+//     var Area=width*height
+//     alert(Area)
+// }
+
+// // 9.1
+// area(4,6)
+
+// // 9.2
+// var width=4;
+// var height=6
+
+// area(width,height)
+
+
+// 10
+// function palindrome(){
+//     var word=prompt("Enter the word")
+//     var anword=""
+//     for(var i=word.length-1;i>=0;i--){
+//         anword=anword.concat(word[i])
+        
+//     }
+    
+//      if(anword===word){
+//             alert("The word is palindrome")
+//      }   
+//      else{
+//         alert("The word is not palindrome")
+//      }
+    
+// }
+
+// palindrome()
+
+
+// 11
+// function convert(sen){
+//     var newsen=""
+//     var sentence=sen.split(" ")
+//     for(var i=0;i<sentence.length;i++){
+//         var word=sentence[i]
+        
+//         newsen+=" "+word[0].toUpperCase()+word.slice(1,)
+
+//     }
+//     alert(newsen)
+// }
+
+// var sen="the quick brown fox"
+// convert(sen)
+
+
+// 12
+// function longest(sen){
+//     var sentence=sen.split(" ");
+//     var len=1;
+//     var longestWord;
+//     for(var i=0;i<sentence.length;i++){
+
+//         if(sentence[i].length>len){
+//             longestWord=sentence[i]
+//             // break
+//         }
+        
+    
+// }
+//     alert("The longest word is: "+longestWord)
+// }
+
+// var sen="Web Development Tutorial"
+// longest(sen)
+
+
+// 13
+// function occur(str,let) {
+//     count=0
+//     for(var i=0;i<str.length;i++){
+//         if(str[i]===let){
+//             count+=1
+
+//         }
+//     }
+//     alert("letter "+let+" repeated "+count+" times" )
+    
+// }
+
+
+// occur( 'JSResourceS.com',"o")
+
+// 14
+// function calcCircumference(radius) {
+//     alert("The circumference is "+Math.round(2*3.14*radius,2))
+    
+// }
+
+// function calcArea(radius) {
+//     alert("The area is "+Math.round(3.14*radius*radius,2))
+    
+// }
+
+// calcCircumference(5)
+// calcArea(5)
+    
