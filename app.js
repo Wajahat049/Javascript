@@ -1288,3 +1288,381 @@
 // calcCircumference(5)
 // calcArea(5)
     
+// CHAPTER 38-44
+
+// 1
+// function power(a,b){
+//     document.write(a**b)
+// }
+
+// power(2,3)
+
+// 2
+// function leapYear(){
+//     var year = +prompt("Enter the year")
+//     if(year%4===0){
+//         document.write("The year is leap year")
+//     }
+//     else{
+//         document.write("The year is not leap year")
+//     }
+// }
+
+// leapYear()
+
+
+// 3
+// function triangleArea(a,b,c){
+//     function forS(){
+//         var S= a + b + c
+//         return S
+//     }
+//     var S = forS()
+//     var area = S*(S-a)*(S-b)*(S-c)
+//     document.write("The area  of triangle is ",area)
+// }
+
+// triangleArea(2,3,4)
+
+
+// 4
+// function mainFunction(sub1,sub2,sub3){
+//     total = 100
+//     function average(){
+//         var avg = Math.round((sub1+sub2+sub3)/3,2)
+//         return avg 
+//     }
+//     function percentage(){
+//         var per1 = (sub1/total)*100
+//         var per2 = (sub2/total)*100
+//         var per3 = (sub3/total)*100
+//         return [per1 , per2 , per3]
+//     }
+
+//     document.write("The average is ", average()+"<br>")
+//     document.write("The percentage in 1st subject is ",percentage()[0]+"%<br>" )
+//     document.write("The percentage in 2nd subject is ",percentage()[1]+"%<br>" )
+//     document.write("The percentage in 3rd subject is ",percentage()[2]+"%<br>" )
+
+
+// }
+
+// mainFunction(50,70,80)
+
+
+// 5
+// function findIndex(string,char){
+//     for(var i=0;i<string.length;i++){
+//         if(string[i]===char){
+//             alert(i)
+//             break
+//         }
+//     }
+
+// }
+
+// findIndex("wajahat", "j")
+
+
+// 6
+// function deleteVowels(sen){
+//     for(var i=0;i<sen.length;i++){
+//         if(sen[i]==="a" || sen[i]=== "e" || sen[i]=== "i" || sen[i]=== "o" || sen[i]=== "u"){
+//             mysen=sen.replace(sen[i],"")
+//             sen=mysen
+//         }
+//     }
+//     alert(mysen)
+// }
+
+
+// deleteVowels("Hello world")
+
+
+// 7
+// function findoccurences(sen){
+    
+//     var chars = sen.toLowerCase().split("")
+//     var count=0
+//     for (var i =0;i<chars.length-1;i++){
+//         var first = chars[i]
+//         var next = chars[i+1]
+//         if(correctchar(first) && correctchar(next)){
+//             count++
+//         }
+
+//     }
+
+//     function correctchar(char){
+//         switch (char) {
+//             case "a":
+//             case "e":
+//             case "i":
+//             case "o":
+//             case "u":
+//                 return true
+                
+        
+//             default:
+//                 return false;
+//         }
+//     }
+
+//     alert (Math.floor(count))
+// }
+
+// findoccurences("air ear piece please")
+
+
+
+// 8
+// var dist = +prompt("Enter the distance in km")
+// function convertToMeter(){
+//     document.write("The distance in metres is ",dist*1000+"<br>")
+// }
+
+// function convertToFeet(){
+//     document.write("The distance in metres is ",dist*3280+"<br>")
+// }
+
+// function convertToInches(){
+//     document.write("The distance in metres is ",dist*39370+"<br>")
+// }
+
+// function convertToCentimetre(){
+//     document.write("The distance in metres is ",dist*10000+"<br>")
+
+// }
+
+// convertToMeter()
+// convertToFeet()
+// convertToInches()
+// convertToCentimetre()
+
+
+// 9
+// function overtime(){
+//     hours = +prompt("enter hours worked by employee")
+//     if (hours > 40){
+//         newhour = hours - 40
+//         overtimepay = newhour*12
+//         alert("Overtime pay of employee is RS:"+overtimepay)
+
+//     }
+// }
+ 
+
+// overtime()
+
+// 10
+// function currencyNotes(){
+//     var amount = +prompt()
+//     hundred = Math.floor(amount/100)
+//     fifty = Math.floor((amount-(hundred*100))/50)
+//     ten = Math.floor((amount-((hundred*100)+(fifty*50)))/10)
+//     document.write("You will have " + hundred + " hundred notes " + fifty + " fifty notes " + ten + " ten notes" )
+
+    
+// }
+
+// currencyNotes()
+
+
+// CHAPTER 43-48
+
+// 1
+// function clickonLink(){
+//     alert("Link is clicked")
+// }
+
+
+// 2
+// function clickonimg(){
+//     alert("Thanks fro purchasing a phone from us")
+// }
+
+// 3
+// function deleteRow(r) {
+//     var i = r.parentNode.parentNode.rowIndex;
+//     document.getElementById("myTable").deleteRow(i);
+//     indexing()
+// }
+
+// function indexing(){
+// var index = document.getElementsByName("index")
+// for(var i =  0;i<index.length;i++){
+// index[i].innerHTML=i
+// }
+// }
+
+
+// 4
+// function changeimage(id,src) {
+//     var img=document.getElementById(id)
+//     img.src= src  
+// }
+
+// 5
+// function increase(){
+//     var count = document.getElementById("counter")
+//     counter =parseInt(count.innerHTML)
+//     counter+=1
+//     count.innerHTML=counter
+
+// }
+
+// function decrease(){
+//     var count = document.getElementById("counter")
+//     counter= parseInt(count.innerHTML)
+//     counter-=1
+//     count.innerHTML=counter
+// }
+
+
+// CHAPTER 49-52
+
+// 1
+// function showform(){
+//     var firstname= document.getElementById("fname")
+//     var lastname= document.getElementById("lname")
+//     var email= document.getElementById("email")
+//     document.write("First name: " +firstname.value + "<br>" +"Last name: " + lastname.value + "<br>" +"Email: " + email.value + "<br>")
+
+// }
+
+
+// 2
+// function expand(){
+//     var text="Samsung Galaxy A31 price in Pakistan starts at Rs. 41,999.The main lens of the setup will be 48 megapixels along with a 8 MP ultra-wide shooter and a 5 MP macro and 5 MP depth lens to capture excellent photography. Samsung A31 is packed with an 8 megapixels front-facing camera. The 6.4 inches super AMOLED panel will provide the phone with full HD plus the resolution of 1080 x 2400 pixels."
+//     pargraph=document.getElementById("para")
+//     pargraph.innerHTML=text
+// }
+
+// 3
+
+
+// function makingTable(){
+//     var name = document.getElementById("name")
+//     var classes = document.getElementById("class")
+//     var nameText=document.createTextNode(name.value)
+//     var classText=document.createTextNode(classes.value)
+//     var table = document.getElementById("table")
+//     var row = document.createElement("tr")
+//     var col1 = document.createElement("td")
+//     var col2 = document.createElement("td")
+//     var col3 = document.createElement("td")
+//     var col4 = document.createElement("td")
+//     var dlt_btn = document.createElement("button")
+//     var dlt_text = document.createTextNode("Delete")
+//     dlt_btn.appendChild(dlt_text)
+//     dlt_btn.setAttribute("onclick","deleteRow(this)")
+//     var edt_btn = document.createElement("button")
+//     var edt_text = document.createTextNode("Edit")
+//     edt_btn.appendChild(edt_text)
+//     edt_btn.setAttribute("onclick","edititem(this)")
+//     col1.appendChild(nameText)
+//     col2.appendChild(classText)
+//     col3.appendChild(dlt_btn)
+//     col4.appendChild(edt_btn)
+//     row.appendChild(col1)
+//     row.appendChild(col2)
+//     row.appendChild(col3)
+//     row.appendChild(col4)
+//     table.appendChild(row)
+
+//     console.log(table)
+// }
+
+// function deleteRow(r) {
+//     var i = r.parentNode.parentNode.rowIndex;
+//     document.getElementById("table").deleteRow(i);
+// }
+
+
+
+// function edititem(a){
+//     var val = a.parentNode.parentNode
+//     var name = val.childNodes[0]
+//     var classes = val.childNodes[1]
+//     console.log(name)
+//     console.log(classes)
+//     var editname = prompt("Edit name")
+//     var editClasses = +prompt("Edit class")
+//     console.log(a.parentNode.parentNode.childNodes[0].innerText )
+//     a.parentNode.parentNode.childNodes[0].innerText = editname
+//     a.parentNode.parentNode.childNodes[1].innerText = editClasses
+//     console.log(name)
+    
+// }
+
+
+
+
+
+// CHAPTER 58-67
+
+// 1
+
+// i.
+// var main = document.getElementById("main-content")
+// console.log(main)
+
+// ii.
+// console.log(main.childNodes)
+
+// iii.
+// var render= document.getElementsByClassName("render")
+// for (var i = 0;i<render.length;i++){
+//     console.log(render[i].innerHTML)
+// }
+
+// iv
+// var firstname = document.getElementById("first-name")
+// firstname.value="Wajahat"
+
+// v.
+// var lastname = document.getElementById("last-name")
+// lastname.value="ahmed"
+// var email = document.getElementById("email")
+// email.value="wajjuwajahat123@gmail.com"
+
+
+// 2
+
+// i.
+// var main = document.getElementById("form-content")
+// document.write(main.nodeType)
+
+// ii.
+// var last = document.getElementById("lastName")
+// console.log(last.nodeType)
+// console.log(last.childNodes)
+
+// iii.
+// var oldnode = last.childNodes[0]
+// var text = document.createTextNode("Hello world")
+// console.log(last.replaceChild(text,oldnode))
+// console.log(last.childNodes)
+
+// iv
+// var main = document.getElementById("main-content")
+// console.log(main.firstChild)
+// console.log(main.lastChild)
+
+// v.
+// var last = document.getElementById("lastName")
+// console.log(last.nextSibling)
+// console.log(last.previousSibling)
+
+// vi.
+// var email = document.getElementById("email")
+// console.log(email.parentNode)
+// console.log(email.nodeType)
+
+
+
+
+
+
+
+
